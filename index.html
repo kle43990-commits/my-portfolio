@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Alex Morgan, a software engineering student who builds thoughtful digital experiences.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Alex Morgan | Software Engineering Student</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Alex Morgan home"><span class="brand-mark">A</span><span>alex<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle color theme">
+          <span id="themeIcon" aria-hidden="true">☾</span><span class="theme-label">Theme</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING & COLLABORATION</p>
+        <h1>Hi, I'm Alex.<br>I build <span class="gradient-text">useful things</span><span class="cursor">.</span></h1>
+        <p class="hero-description">A software engineering student who enjoys turning ideas into clean, accessible, and user-friendly digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Let's connect</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-icon">⌘</span> Software Engineering</span>
+          <span><span class="meta-icon">⌖</span> Based in Vietnam</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration representing software development" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-card card-code">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <div class="code-line"><span class="code-purple">const</span> <span class="code-blue">dream</span> = <span class="code-green">"build"</span>;</div>
+          <div class="code-line"><span class="code-purple">while</span> (learning) {</div>
+          <div class="code-line indent"><span class="code-blue">keepGoing</span>();</div>
+          <div class="code-line">}</div>
+          <div class="code-caption">always curious.dev</div>
+        </div>
+        <div class="floating-badge badge-top"><span>✦</span> Creative thinking</div>
+        <div class="floating-badge badge-bottom"><span>✓</span> Learning by building</div>
+        <div class="hero-shape"><div class="shape-inner">A<span>.</span></div></div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span> Scroll to discover</a>
+    </section>
+
+    <section class="section section-muted" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Curious by nature.<br><span class="gradient-text">Builder by choice.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="large-copy">I’m passionate about learning how technology works and using it to solve real problems.</p>
+          <p>Right now, I’m strengthening my foundations in programming, web development, algorithms, and software design. I believe the best way to grow is to stay curious, build consistently, and learn from every iteration.</p>
+          <div class="stats-row">
+            <div class="stat"><strong>01</strong><span>Keep learning</span></div>
+            <div class="stat"><strong>02</strong><span>Build with purpose</span></div>
+            <div class="stat"><strong>03</strong><span>Improve every day</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT I WORK WITH</p><h2>My current toolkit<span class="gradient-text">.</span></h2></div>
+        <p class="section-intro">A growing set of tools and concepts I use to bring ideas to life.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon icon-orange">&lt;/&gt;</div><h3>Frontend</h3><p>Building structured pages and responsive interfaces.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-purple">{ }</div><h3>Programming</h3><p>Practicing problem solving and core programming concepts.</p><div class="tag-list"><span>C</span><span>Java</span><span>Algorithms</span></div></article>
+        <article class="skill-card"><div class="skill-icon icon-green">⌘</div><h3>Tools</h3><p>Learning a reliable workflow for writing and managing code.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>VS Code</span></div></article>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">SELECTED WORK</p><h2>Things I've been building<span class="gradient-text">.</span></h2></div>
+          <p class="section-intro">A few sample projects that represent my learning journey.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter projects by category">
+          <button class="filter-button active" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter-button" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-button" data-filter="programming" aria-pressed="false">Programming</button>
+          <button class="filter-button" data-filter="design" aria-pressed="false">Design</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project-card" data-category="web">
+            <div class="project-visual visual-expense"><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i></div><div class="mock-title">Monthly overview</div><div class="mock-number">$1,240 <small>spent this month</small></div><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="visual-label">01 / WEB APP</span></div>
+            <div class="project-info"><div><p class="project-type">WEB DEVELOPMENT</p><h3>Expense Tracker</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>A simple concept for organizing expenses and understanding spending habits.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="project-card" data-category="programming">
+            <div class="project-visual visual-library"><div class="book-stack"><span>READ</span><span>LEARN</span><span>GROW</span></div><div class="library-orbit"></div><span class="visual-label">02 / C PROJECT</span></div>
+            <div class="project-info"><div><p class="project-type">PROGRAMMING</p><h3>Library Manager</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>A console-based program to manage books, search records, and track quantities.</p><div class="tag-list"><span>C</span><span>Structs</span><span>File I/O</span></div></div>
+          </article>
+          <article class="project-card" data-category="design">
+            <div class="project-visual visual-focus"><div class="focus-circle"><span>FOCUS</span><strong>25:00</strong><small>ONE THING AT A TIME</small></div><span class="visual-label">03 / UI CONCEPT</span></div>
+            <div class="project-info"><div><p class="project-type">UI / UX CONCEPT</p><h3>Focus Timer</h3></div><span class="project-arrow" aria-hidden="true">↗</span><p>A minimal study timer concept designed to encourage focused work sessions.</p><div class="tag-list"><span>UI Design</span><span>CSS</span><span>Prototyping</span></div></div>
+          </article>
+        </div>
+        <p class="project-note"><strong>Portfolio note:</strong> These are example project descriptions. Replace them with your own real projects and add working repository or demo links before submitting.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy">
+          <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>Let's make something<br><span class="gradient-text">meaningful.</span></h2>
+          <p>I'm always open to learning opportunities, sharing ideas, and collaborating on student projects.</p>
+          <div class="email-row"><span class="email-icon">✉</span><span id="emailText">alex.morgan@example.com</span><button class="copy-button" id="copyEmail" type="button">Copy email</button></div>
+          <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required minlength="2">
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your idea..." required minlength="10"></textarea>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          <button class="button button-primary form-submit" type="submit">Validate message <span aria-hidden="true">↗</span></button>
+          <p class="form-disclaimer">Demo form: it validates your input but does not send or store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">A</span><span>alex<span class="brand-dot">.</span></span></a><p>Designed & built with curiosity. © <span id="year"></span> Alex Morgan.</p><a class="back-top" href="#home">Back to top ↑</a></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
